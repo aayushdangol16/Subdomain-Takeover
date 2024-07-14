@@ -23,17 +23,20 @@ When an organization stops using a third-party service, they may forget to remov
 <b>Brand Damage</b>: Users might lose trust in the organization if they encounter malicious content on what they think is a legitimate subdomain.
 ## Example
 ### 1. Initial Setup: ``` fallora.com ``` points to a GitHub Pages site.
-``` fallora.com ``` is set up as a domain to serve documentation or any other content hosted on GitHub Pages. GitHub Pages allows users to host static websites directly from GitHub repositories.<br>
-![404](https://raw.githubusercontent.com/aayushdangol16/Subdomain-Takeover/main/img/404.png)
+``` fallora.com ``` is set up as a domain to serve documentation or any other content hosted on GitHub Pages. GitHub Pages allows users to host static websites directly from GitHub repositories.
 ### 2. Decommissioning: The organization stops using GitHub Pages but forgets to remove the DNS CNAME record.
 The organization may decides to stop using GitHub Pages to host their documentation. However, they mistakenly overlook removing or updating the DNS CNAME record that points ``` fallora.com ``` to their GitHub repository's Pages site.
 
-Due to this oversight, the DNS still resolves ``` fallora.com ``` to the GitHub Pages service, even though the organization no longer maintains the GitHub repository or updates its content.
+Due to this oversight, the DNS still resolves ``` fallora.com ``` to the GitHub Pages service, even though the organization no longer maintains the GitHub repository or updates its content.<br>
+![404](https://raw.githubusercontent.com/aayushdangol16/Subdomain-Takeover/main/img/404.png)
 ### 3. Attacker's Action: The attacker registers a GitHub Pages site with the same name.
 Seeing that ``` fallora.com ``` is vulnerable (pointing to a non-existent or inactive GitHub repository), the attacker decides to exploit this opportunity.
 
-The attacker creates a new GitHub repository or uses an existing repository they control. They configure this repository to host content that could potentially harm users, such as phishing pages or malware.
+The attacker creates a new GitHub repository or uses an existing repository they control. They configure this repository to host content that could potentially harm users, such as phishing pages or malware.<br>
+![404](https://raw.githubusercontent.com/aayushdangol16/Subdomain-Takeover/main/img/index.png)
 ### 4. Takeover: The attacker now controls ``` fallora.com ``` and can serve any content they want.
-By setting up their GitHub repository with the same name , and configuring GitHub Pages to serve content from this repository, the attacker effectively takes control of ``` fallora.com ```.
+By setting up their GitHub repository with the same name , and configuring GitHub Pages to serve content from this repository, the attacker effectively takes control of ``` fallora.com ```.<br>
+![404](https://raw.githubusercontent.com/aayushdangol16/Subdomain-Takeover/main/img/dns.png)
 
-Any visitor accessing ``` fallora.com ``` will now be directed to the attacker's GitHub Pages site instead of the legitimate one that was previously hosted by the organization.
+Any visitor accessing ``` fallora.com ``` will now be directed to the attacker's GitHub Pages site instead of the legitimate one that was previously hosted by the organization.<br>
+![404](https://raw.githubusercontent.com/aayushdangol16/Subdomain-Takeover/main/img/take.png)
