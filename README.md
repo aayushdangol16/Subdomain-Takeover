@@ -23,7 +23,8 @@ When an organization stops using a third-party service, they may forget to remov
 <b>Brand Damage</b>: Users might lose trust in the organization if they encounter malicious content on what they think is a legitimate subdomain.
 ## Example
 ### 1. Initial Setup: ``` fallora.com ``` points to a GitHub Pages site.
-``` fallora.com ``` is set up as a domain to serve documentation or any other content hosted on GitHub Pages. GitHub Pages allows users to host static websites directly from GitHub repositories.
+``` fallora.com ``` is set up as a domain to serve documentation or any other content hosted on GitHub Pages. GitHub Pages allows users to host static websites directly from GitHub repositories.<br>
+![404](https://raw.githubusercontent.com/aayushdangol16/Subdomain-Takeover/main/img/404.png)
 ### 2. Decommissioning: The organization stops using GitHub Pages but forgets to remove the DNS CNAME record.
 The organization may decides to stop using GitHub Pages to host their documentation. However, they mistakenly overlook removing or updating the DNS CNAME record that points ``` fallora.com ``` to their GitHub repository's Pages site.
 
